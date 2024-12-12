@@ -1,0 +1,868 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    background-color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav{
+    background-color: #72963746;
+}
+
+nav ul{
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav li{
+    height: 100px;
+}
+
+nav a{
+    height: 100%;
+    padding: 0 20px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+#yad-logo img{
+    height: 120px;
+    width: 100%;
+}
+
+#opportunity-item1 i {
+    color: #719637;
+    background-color: white;
+    padding: 10px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 12px;
+    font-weight: 600;
+}
+
+  #opportunity-item2 i {
+    color: #ffffff;
+    background-color: #719637;
+    padding: 11px;
+    border-radius: 12px;
+    font-weight: 600;
+}  
+
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgb(255, 255, 255,0.6);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar a{
+    color: #719637;
+}
+
+.sidebar li{
+    width: 100%;
+}
+
+.sidebar a{
+    width: 100%;
+}
+
+.menu-button{
+    display: none;
+}
+
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+/* اول قسم */
+
+.countainer.first{
+  width: 100%;
+  max-width: 1210px;
+  height: 72vh;
+  align-content: center;
+  
+}
+
+.countainer.first #div1{
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+}
+
+.countainer.first #div1 h1{
+    line-height: 1.5;
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.countainer.first #div1 p{
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.countainer.first #div1 a{
+    color: #719637;
+    text-decoration: none;
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    width: fit-content;
+    padding: 15px 25px;
+    border-radius: 12px;
+    font-weight: 700;
+    box-shadow: 0 0 #0000, 0 1.8px 5.8px #00000034, 0 3.9px 11.7px #0000000d, 0 6.7px 18px #0000000e, 0 11.5px 25.3px #0000000f, 0 22.6px 35.9px #00000010;
+    transition: all .2s;
+}
+
+.countainer.first #div1 a:hover{
+    background-color: #719637;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    transition: all .2s;
+}
+
+.hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 83%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+
+
+
+
+
+
+
+/* ثاني قسم */
+.secound{
+  width: 100%;
+  max-width: 1210px;
+  align-content: center;
+}
+
+#div2{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.box{
+    display: flex;
+    width: 100%;
+    min-width: 300px;
+    max-width: 600px;
+    background-color: white;
+    border-top-right-radius: 10px;
+    box-shadow: 0 0 1rem #00000027;
+    overflow: hidden;
+}
+
+.inside-box{
+    display: flex;
+    align-items: center;
+}
+
+.title-blog {
+    padding: 15px;
+    text-align: center;
+    font-size: 10px;
+    color: #726f6f;
+    text-decoration: none;
+}
+
+.blog-pic img {
+    width: 270px;
+    height: 150px;
+    object-fit: cover;
+}
+
+@media (max-width: 991px) {
+    #div2{
+        justify-content: center;
+    }
+
+    .box{
+        width: 100%;
+        min-width: 200px;
+        max-width: 350px;
+        height: auto;
+    }
+
+    .inside-box{
+        flex-direction: column-reverse;
+    }
+
+    .blog-pic img {
+        width: 100%;
+        height: auto;
+    }
+
+    .title-blog {
+        font-size: 9px;
+    }
+
+}
+
+@media (max-width: 666px) {
+
+     #div2{
+        flex-direction: column;
+    }
+
+    .box{
+        width: 100%;
+    min-width: 300px;
+    max-width: 600px;
+    }
+
+    .inside-box{
+        flex-direction: row;
+    }
+
+    .blog-pic img {
+        width: 270px;
+        height: 150px;
+        object-fit: cover;
+    }
+}
+
+@media  (max-width: 480px) {
+    
+    #div2{
+        justify-content: center;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .box{
+        width: 100%;
+        min-width: 200px;
+        max-width: 350px;
+        height: auto;
+    }
+
+    .inside-box{
+        flex-direction: column-reverse;
+    }
+
+    .blog-pic img {
+        width: 100%;
+        height: auto;
+    }
+
+    .title-blog {
+        font-size: 9px;
+    }
+
+}
+
+
+
+
+
+
+/* ثالث قسم */
+
+
+.third {
+    width: 100%;
+    height: 50vh;
+    align-content: center;
+    background-image: url("map.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#div3{
+    margin: 30px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#div3 span{
+    color: gray;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: bold;
+    line-height: 3;
+    text-align: center;
+}
+
+#div3 h2{
+    color: #719637;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+
+#info-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#info-div span {
+    font-size: inherit; /* يجعل حجم النص داخل span مطابقًا لحجم النص في p */
+    font-weight: 700; /* يضمن أن الوزن يبقى مطابقًا للنص الأصلي */
+    text-transform: none; /* يمنع التحويل إلى uppercase أو غيره */
+    color: inherit; /* يضمن أن لون النص داخل span مطابق للنص الأصلي */
+    line-height: inherit; /* يطابق ارتفاع السطر للنص المحيط */
+    font-family: inherit; /* يجعل الخط المستخدم مطابقًا للنص المحيط */
+}
+
+#info-div p{
+    color: gray;
+    margin-bottom: 0;
+    font-family: Manrope Variablefont, Arial, sans-serif;
+    text-wrap: balance;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+    font-size: 1rem;
+}
+
+
+#div3 a{
+    margin-top: 20px;
+    text-decoration: none;
+    background-color: #719637;
+    color: white;
+    padding: 16px;
+    border-radius: 12px;
+    font-weight: 700;
+}
+
+@media (max-width:766px){
+
+    .third {
+        height: 70vh;
+    }
+
+    #info-div p{
+        font-size: 0.9rem;
+    }
+
+}
+
+@media (max-width:350px){
+
+    .third {
+        height: 80vh;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+/* رابع قسم */
+
+
+.fourth{
+    width: 100%;
+    align-content: center;
+    background-color: #719637;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 80px;
+}
+
+#div4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+    gap: 50px;
+}
+
+#div-info{
+    grid-column-gap: 16rem;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    place-items: start center;
+    display: grid;
+}
+
+#big-title h1{
+    font-size: 35px;
+}
+
+.box-information .numbers{
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.box-information .numbers-title{
+    text-align: center;
+    font-weight: 100;
+    font-size: 1rem;
+}
+
+@media (max-width: 949px){
+
+    #big-title h1{
+        font-size: 30px;
+    }
+
+    #div-info{
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 4rem;
+    }
+
+}
+
+@media (max-width: 615px){
+
+    #div-info{
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 4rem;
+        grid-row-gap: 4rem;
+    }
+
+}
+
+@media (max-width: 479px){
+    #div-info{
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+
+
+
+
+
+
+/* خامس قسم */
+
+.fifth{
+    display: flex;
+    width: 100%;
+    height: 60vh;
+    background-color: #ffffff;
+    align-items: center;
+    justify-content: center;
+}
+
+#main-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    background-color: #f4f4f4;
+    border-radius: 1.25rem;
+    padding-top: 3.125rem;
+    padding-bottom: 3.125rem;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.newsletter-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.newsletter-icon {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.newsletter-header h2 {
+    letter-spacing: -.04375rem;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.2;
+    padding-left: 8px;
+    padding-right: 8px;
+    color: #719637;
+}
+
+.newsletter-header p {
+    color: gray;
+    letter-spacing: 0;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.newsletter-icon{
+    user-select: none;
+    pointer-events: none;
+    -webkit-user-drag: none;
+    object-fit: cover;
+}
+
+.newsletter-form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 1rem;
+}
+
+.input-field{
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    padding: 20px 20px;
+    font-size: 1rem;
+    color: gray;
+}
+
+.form-row{
+    display: flex;
+    gap: 10px;
+}
+
+.center-button{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.submit-button{
+    margin-top: 10px;
+    background-color: #719637;
+    color: #fff;
+    padding: 20px;
+    border: none;
+    border-radius: 12px;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.submit-button:hover{
+    background-color: #76aa22;
+    color: #ffffff;
+    transition: all 0.3s ease-in-out;
+}
+
+.terms-text{
+    padding-left: 8px;
+    padding-right: 8px;
+    font-size: .75rem;
+    color: gray;
+    text-align: center;
+}
+
+
+
+@media (max-width: 571px){
+
+    .input-field{
+        padding: 15px 15px;
+        font-size: 0.8rem;
+    }
+
+    .submit-button{
+        padding: 15px;
+    }
+
+    .newsletter-header h2 {
+        font-size: 1.5rem;
+    }
+
+    .newsletter-header p {
+        font-size: 1rem;
+    }
+}
+
+
+@media (max-width: 463px){
+
+    .form-row{
+        flex-direction: column;
+    }
+
+    .newsletter-header h2 {
+        font-size: 1.2rem;
+    }
+
+    .newsletter-header p {
+        font-size: 0.8rem;
+    }
+ 
+}
+
+
+@media (max-width: 367px){
+
+#main-div{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+}
+
+
+
+/* سادس قسم */
+
+.background-footer{
+  width: 100%;
+  max-width: 2000px;
+  background-color: #91B657;
+}
+
+.CopyRightText{
+    width: 100%;
+    background-color: #7da141;
+    padding: 20px 100px 30px;
+    text-align: center;
+    color: white;
+    border: 1px solid rgpa(0, 0, 0, 0.15);
+}
+
+.cont {
+    width: 100%;
+    background-color: #87aa4f;
+    padding: 40px;
+}
+
+.footer {
+    background-color: #87aa4f;
+    padding: 70px 0;
+    line-height: 1.5;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.footer-col {
+    width: 20%;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: bold;
+    position: relative;
+}
+
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: white;
+    height: 2px;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ebebeb;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.footer-col ul li a:hover {
+    color: #ffffff;
+    padding-left: 8px;
+}
+
+.footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    border-radius: 50%;
+    color: #ffffff;
+}
+
+.social-links a i {
+    line-height: 40px;
+}
+
+
+.footer-col .social-links a:hover {
+    color: #719637;
+    background-color: #ffffff;
+}
+
+@media(max-width: 975px) {
+
+    .footer-col{
+        width: 25%;
+    }
+
+}
+
+@media(max-width: 758px) {
+
+    .footer-col{
+        width: 100%;
+    }
+
+    .CopyRightText{
+        font-size: 0.75rem;
+    }
+
+}
+
+/* هون ضبطنا الكونتينرات كلهم */
+
+.countainer{
+
+    /* border: 1px solid red; */
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+/* xs */
+@media (max-width: 475px) {
+
+    .countainer.first #div1 h1{
+        font-size: 2.5rem;
+    }
+
+    
+
+}
+
+/* sm */
+@media (min-width: 640px) {
+
+}
+
+/* md */
+@media (max-width: 768px) {
+
+
+}
+
+/* lg */
+@media (min-width: 1024px) {
+
+}
+
+/* xL */
+@media (min-width: 1280px) {
+
+}
+
+/* 2xL */
+@media (min-width: 1536px) {
+
+}
+
+
+/* NAVBAR RESPONSIVENESS */
+
+@media (min-width: 867px) {
+    nav li:first-child {
+        margin-right: 600px;
+    }
+}
+
+/* Rules for medium-sized screens */
+@media (max-width: 1280px) {
+    nav li:first-child {
+        margin-right: auto;
+    }
+
+    #yad-logo img {
+        position: relative;
+        left: -40px;
+    }
+}
+
+
+/* Rules for smaller screens */
+@media (max-width: 800px) {
+    .hideonmobile {
+        display: none;
+    }
+
+    .menu-button {
+        display: block;
+    }
+}
+
+/* NAVBAR RESPONSIVENESS */
